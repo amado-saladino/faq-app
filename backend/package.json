@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Backend FAQ App Challenge",
+  "main": "src/app.mjs",
+  "type": "module",
+  "scripts": {
+    "pretest": "eslint src/ --ext .js,.jsx,.ts,.tsx --fix",
+    "start": "nodemon -r esm src/app.mjs",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "npm": "^6.14.8",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^26.4.0",
+    "husky": "^4.2.5",
+    "nodemon": "^2.0.4"
+  }
+}
