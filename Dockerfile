@@ -1,8 +1,7 @@
 FROM node:current-slim
 
 WORKDIR /app
+COPY ./package.json ./
 RUN yarn install
-
-CMD [ "yarn", "start" ]
-
 COPY . /app
+CMD [ "yarn", "start" ]
